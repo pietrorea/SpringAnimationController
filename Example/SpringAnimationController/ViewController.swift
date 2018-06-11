@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBAction func presentViewController(_ sender: UIButton) {
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let presentedViewController = storyboard.instantiateViewController(withIdentifier: "PresentedViewController") as? PresentedViewController else {
+        guard let presentedViewController = storyboard.instantiateViewController(withIdentifier: "PresentedViewControllerNavigationController") as? UINavigationController else {
             return
         }
 
