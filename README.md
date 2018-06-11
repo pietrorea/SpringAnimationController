@@ -4,11 +4,9 @@
 [![License](https://img.shields.io/cocoapods/l/SpringAnimationController.svg?style=flat)](https://cocoapods.org/pods/SpringAnimationController)
 [![Platform](https://img.shields.io/cocoapods/p/SpringAnimationController.svg?style=flat)](https://cocoapods.org/pods/SpringAnimationController)
 
-![Demo](https://user-images.githubusercontent.com/1264371/41214965-f2636130-6d1b-11e8-8ac3-5e415d56664c.gif)
-
-## About
-
 `SpringAnimationController` provides a subtle way to spice up the default modal presentation style on iOS using spring animations. Simply implement the `UIViewControllerTransitioningDelegate`  protocol and return this animation controller to add some bounce at the top of your modal presentation.
+
+![Demo](https://user-images.githubusercontent.com/1264371/41214965-f2636130-6d1b-11e8-8ac3-5e415d56664c.gif)
 
 ## Usage
 
