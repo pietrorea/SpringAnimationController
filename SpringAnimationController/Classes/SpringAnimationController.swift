@@ -15,7 +15,7 @@ public class SpringAnimationController: NSObject {
     private static let defaultSpringDamping: CGFloat = 0.70
     private static let defaultInitialSpringVelocity: CGFloat = 0.9
 
-    private let isPresenting: Bool
+    let isPresenting: Bool
 
     var transitionDuration: TimeInterval = SpringAnimationController.defaultTransitionDuration
     var delay: TimeInterval = SpringAnimationController.defaultDelay
