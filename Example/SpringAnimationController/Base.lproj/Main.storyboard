@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="r9E-DI-q2Y">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3Il-X6-dIP">
+            <objects>
+                <viewController id="r9E-DI-q2Y" customClass="ViewController" customModule="SpringAnimationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="08J-eO-oD5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyn-IW-b3z">
+                                <rect key="frame" x="161" y="578" width="53" height="30"/>
+                                <state key="normal" title="Present"/>
+                                <connections>
+                                    <action selector="presentViewController:" destination="r9E-DI-q2Y" eventType="touchUpInside" id="w1A-hu-MM1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RYU-TX-ztu" firstAttribute="bottom" secondItem="nyn-IW-b3z" secondAttribute="bottom" constant="59" id="NFi-ON-Per"/>
+                            <constraint firstItem="nyn-IW-b3z" firstAttribute="centerX" secondItem="RYU-TX-ztu" secondAttribute="centerX" id="gFQ-mt-Ejf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RYU-TX-ztu"/>
+                    </view>
+                    <connections>
+                        <outlet property="presentButton" destination="nyn-IW-b3z" id="bZ7-7L-C00"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ckr-64-9eL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="129"/>
+        </scene>
+        <!--Presented View Controller-->
+        <scene sceneID="YQk-Os-YLa">
+            <objects>
+                <viewController storyboardIdentifier="PresentedViewController" id="5aQ-jH-G1A" customClass="PresentedViewController" customModule="SpringAnimationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rn3-3u-nMc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBS-dl-lL6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="qaP-qK-Vz9">
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="Cc7-P1-bWf">
+                                            <connections>
+                                                <action selector="close:" destination="5aQ-jH-G1A" id="fns-HL-6rA"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60392156860000001" green="0.27450980390000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VBS-dl-lL6" firstAttribute="trailing" secondItem="KBe-yB-s40" secondAttribute="trailing" id="Dp6-qS-AgP"/>
+                            <constraint firstItem="VBS-dl-lL6" firstAttribute="leading" secondItem="KBe-yB-s40" secondAttribute="leading" id="JCx-bB-MC8"/>
+                            <constraint firstItem="VBS-dl-lL6" firstAttribute="top" secondItem="rn3-3u-nMc" secondAttribute="top" id="pUn-o0-61z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KBe-yB-s40"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeBarButtonItem" destination="Cc7-P1-bWf" id="JET-dI-Jd4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z1L-TD-S68" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="128"/>
+        </scene>
+    </scenes>
+</document>

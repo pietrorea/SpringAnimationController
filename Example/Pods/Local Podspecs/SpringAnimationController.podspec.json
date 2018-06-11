@@ -1,0 +1,22 @@
+{
+  "name": "SpringAnimationController",
+  "version": "0.1.0",
+  "summary": "A short description of SpringAnimationController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/pietrorea/SpringAnimationController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "pietrorea": "pietro@sweetpeamobile.com"
+  },
+  "source": {
+    "git": "https://github.com/pietrorea/SpringAnimationController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SpringAnimationController/Classes/**/*"
+}

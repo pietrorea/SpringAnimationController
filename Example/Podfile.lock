@@ -1,0 +1,16 @@
+PODS:
+  - SpringAnimationController (0.1.0)
+
+DEPENDENCIES:
+  - SpringAnimationController (from `../`)
+
+EXTERNAL SOURCES:
+  SpringAnimationController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SpringAnimationController: b5e8fa132ca18eac595856a83d616f0fe0b02d62
+
+PODFILE CHECKSUM: 8d86f12e5a1737f10946a243e768476c1bee124a
+
+COCOAPODS: 1.5.3

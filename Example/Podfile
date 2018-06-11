@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SpringAnimationController_Example' do
+  pod 'SpringAnimationController', :path => '../'
+
+  target 'SpringAnimationController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
