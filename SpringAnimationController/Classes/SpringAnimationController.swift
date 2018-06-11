@@ -11,16 +11,14 @@ import UIKit
 public class SpringAnimationController: NSObject {
 
     private static let defaultTransitionDuration: TimeInterval = 0.45
-    private static let defaultDelay: TimeInterval = 0.0
     private static let defaultSpringDamping: CGFloat = 0.70
     private static let defaultInitialSpringVelocity: CGFloat = 0.9
 
     let isPresenting: Bool
 
-    var transitionDuration: TimeInterval = SpringAnimationController.defaultTransitionDuration
-    var delay: TimeInterval = SpringAnimationController.defaultDelay
-    var springDamping: CGFloat = SpringAnimationController.defaultSpringDamping
-    var springVelocity: CGFloat = SpringAnimationController.defaultInitialSpringVelocity
+    public var transitionDuration: TimeInterval = SpringAnimationController.defaultTransitionDuration
+    public var springDamping: CGFloat = SpringAnimationController.defaultSpringDamping
+    public var springVelocity: CGFloat = SpringAnimationController.defaultInitialSpringVelocity
 
     public init(isPresenting: Bool) {
         self.isPresenting = isPresenting
@@ -49,7 +47,7 @@ extension SpringAnimationController: UIViewControllerAnimatedTransitioning {
             newFrame.origin.y = presentedVC.view.frame.size.height
             presentedVC.view.frame = newFrame
 
-            UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: delay, usingSpringWithDamping: springDamping, initialSpringVelocity: springVelocity,  options: [], animations: {
+            UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0.0, usingSpringWithDamping: springDamping, initialSpringVelocity: springVelocity,  options: [], animations: {
 
                 let finalFrame = transitionContext.finalFrame(for: presentedVC)
                 presentedVC.view.frame = finalFrame
