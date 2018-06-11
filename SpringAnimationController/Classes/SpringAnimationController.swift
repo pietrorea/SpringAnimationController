@@ -1,6 +1,6 @@
 //
-//  BouncyTransition.swift
-//  BouncyTransition
+//  SpringAnimationController.swift
+//  SpringAnimationController
 //
 //  Created by Pietro Rea on 6/8/18.
 //  Copyright © 2018 Pietro Rea. All rights reserved.
