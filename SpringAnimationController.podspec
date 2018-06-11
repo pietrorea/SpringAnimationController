@@ -17,9 +17,10 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'pietrorea' => 'pietro@sweetpeamobile.com' }
+  s.social_media_url = 'https://twitter.com/pietrorea'
   s.source           = { :git => 'https://github.com/pietrorea/SpringAnimationController.git', :tag => s.version.to_s }
   s.ios.deployment_target = '10.0'
-  s.swift_version = '>= 4.1'
+  s.swift_version = '4.1'
 
   s.source_files = 'SpringAnimationController/Classes/**/*'
 
