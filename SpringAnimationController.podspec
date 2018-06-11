@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.swift_version = '4.1'
 
-  s.source_files = 'SpringAnimationController/Classes/**/*'
+  s.source_files = 'SpringAnimationController/Classes/*.swift'
 
 end
